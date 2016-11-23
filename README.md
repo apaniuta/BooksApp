@@ -11,10 +11,10 @@
     
 ###Run application on localhost
 
-    1) check that port 8090 available
+    1) check that port 8090 is available
     2) npm run start
     3) in browser go to http://localhost:8090
 
-###Try online visit
+###Try it online
 
-    http://apaniuta.github.io/books
+http://apaniuta.github.io/books
