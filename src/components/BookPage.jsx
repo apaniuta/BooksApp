@@ -6,6 +6,7 @@ import Divider from 'material-ui/Divider';
 import FlatButton from 'material-ui/FlatButton';
 
 import styles from './BookPage.less';
+import NO_COVER from '../assets/no-cover.jpg';
 
 const BookPage = props => {
     const { volumeInfo: book } = props;
@@ -22,7 +23,7 @@ const BookPage = props => {
             <Link
                 key={index}
                 className={styles.author}
-                to={`/author/?search=${author}`}
+                to={`/author?search=${author}`}
             >
                 {author}{index === array.length - 1 ? '' : ', '}
             </Link>
@@ -34,7 +35,7 @@ const BookPage = props => {
     return (
         <div className={styles.container}>
             <Paper className={styles.content}>
-                <img className={styles.img} src={IMG_URL ? IMG_URL.thumbnail : '/img/no-cover.jpg'} />
+                <img className={styles.img} src={IMG_URL ? IMG_URL.thumbnail : NO_COVER} />
                 <div className={styles.info}>
                     <div>
                         <h1 className={styles.title}>{book.title}</h1>
