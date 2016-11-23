@@ -1,0 +1,48 @@
+@import "../assets/main.less";
+
+.container {
+    width: 45%;
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.container:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.container:last-child {
+    margin-right: 0;
+}
+
+.img {
+    align-self: center;
+    padding: 6px;
+    height: 225px;
+    min-width: 150px;
+}
+
+.info {
+    padding: 6px 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+.description {
+    color: @adjacent-color;
+    font-size: 14px;
+}
